@@ -19,13 +19,13 @@ A simple FastAPI-based web service that provides Khmer lunar calendar data for a
 
 🌐 https://khmer-lunar-api-1.onrender.com/khmer-lunar/year/{year}
 
-
 ---
 
 ## 📌 API Endpoints
 
 ### `GET /khmer-lunar/year/{year}`  is dynamic u can replace the year that u want like [ 2024 , 2023, ......... ]
-
+### example   
+ 🌐 https://khmer-lunar-api-1.onrender.com/khmer-lunar/year/2025
 Returns Khmer lunar calendar data for the entire year.
 
 #### Response:
