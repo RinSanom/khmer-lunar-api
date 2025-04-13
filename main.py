@@ -1,8 +1,15 @@
 from fastapi import FastAPI
 from datetime import datetime
 import calendar
-
+from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Or ["http://localhost:3000"] during dev
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Khmer lunar month names (mocked)
 khmer_lunar_months = [
